@@ -1,0 +1,147 @@
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800;9..144,900&family=Montserrat:wght@500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLE */
+:root {
+
+    /* COLOR */
+    --DARK-CYAN: hsl(212, 21%, 14%);
+    --CREAM: hsl(30, 38%, 92%);
+    --VERY-DARK-BLUE: hsl(212, 21%, 14%);
+    --DARK-GRAYISH-BLUE: hsl(228, 12%, 48%);
+    --DARK-GREEN: rgba(0, 80, 23, 0.804);
+    --WHITE:  hsl(0, 0%, 100%);
+
+    /* FONT */
+    --FF-MON: 'Montserrat', sans-serif;
+    --FF-FRA: 'Fraunces', serif;
+}
+
+body {
+    background-color: var(--CREAM);
+    font-family: var(--FF-MON);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.image {
+    width: 320px;
+    height: 300px;
+    background-size: cover;
+    background-image: url(images/image-product-mobile.jpg);
+}
+
+
+
+.text {
+    background-color: var(--WHITE);
+    width: 320px;
+    padding: 25px;
+}
+
+.perfume {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
+
+.heading {
+    font-size: 1.7rem;
+    font-family: var(--FF-FRA);
+    font-weight: 800;
+}
+
+.paragraph {
+    margin-top: 15px;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 20px 0px 20px 0px;
+}
+
+.price {
+    font-family: var(--FF-FRA);
+    font-size: 2rem;
+    color: var(--DARK-GREEN);
+}
+
+.noprice {
+    font-size: 0.8rem;
+    text-decoration: line-through;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+.cart-button {
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    background-color: var(--DARK-GREEN);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.add {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 730px) {
+.image {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.text {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+}
+
+@media (min-width: 730px) {
+.container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.image {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 400px;
+    width: 280px;
+    background-image: url(images/image-product-desktop.jpg);
+}
+
+.text {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 280px;
+    height: 400px;
+    padding: 30px;
+}
+}
